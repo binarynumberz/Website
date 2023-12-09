@@ -1,80 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Webpage</title>
+    <title>Your Professional Webpage</title>
+
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fancy font */
+            margin: 0; /* Remove default margin for a clean look */
+            padding: 0; /* Remove default padding */
         }
 
         header {
-            background-color: #222;
-            color: #fff;
+            background-color: #052c56; /* Blue header background */
+            padding: 20px;
             text-align: center;
-            padding: 1em;
+        }
+
+        h1 {
+            margin: 0;
         }
 
         section {
-            margin: 20px;
+            padding: 20px;
         }
 
-        h2 {
-            color: #007acc;
-        }
-
-        .project {
+        .image-container {
+            border: 5px solid #c6ac19; /* Yellow border for image containers */
+            border-radius: 10px; /* Add rounded corners */
+            overflow: hidden; /* Hide overflowing content */
             margin-bottom: 20px;
         }
 
-        footer {
-            background-color: #222;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        img {
+            width: 100%; /* Make images responsive within their containers */
+            height: auto;
+            display: block; /* Remove extra spacing under images */
         }
     </style>
 </head>
-
 <body>
 
     <header>
         <h1>Your Name</h1>
-        <p>College and Professional Achievements</p>
+        <p>Your Tagline</p>
     </header>
 
     <section>
-        <h2>About Me</h2>
-        <p>Age: Your Age</p>
-        <p>Interests: Your Interests</p>
+        <div class="image-container">
+            <img src="images/adobestock_331582681.jpg" alt="Engineering and Creative Passion">
+        </div>
+        
+        <div class="image-container">
+            <img src="Unknown.png" alt="Passion for Language Computational Humanities application">
+        </div>
+
+        <!-- Add more image containers as needed -->
+
     </section>
 
-    <section>
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of Project 1.</p>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
-        </div>
-        <!-- Add more projects as needed -->
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Your Name</p>
-    </footer>
+    <!-- Add more sections and content as needed -->
 
 </body>
-
 </html>
