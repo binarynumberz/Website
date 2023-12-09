@@ -15,13 +15,13 @@
         }
 
         header {
-            background-color: #052c56; /* Blue header background */
+            background-color: #007BFF; /* Blue header background */
             padding: 20px;
             text-align: center;
         }
 
-        h1 {
-            margin: 0;
+        h1, h2, p {
+            margin: 0 0 10px; /* Add spacing between headings and paragraphs */
         }
 
         section {
@@ -29,10 +29,24 @@
         }
 
         .image-container {
-            border: 5px solid #c6ac19; /* Yellow border for image containers */
+            position: relative;
+            border: 5px solid #FFD700; /* Yellow border for image containers */
             border-radius: 10px; /* Add rounded corners */
             overflow: hidden; /* Hide overflowing content */
             margin-bottom: 20px;
+        }
+
+        .heart-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0; /* Hidden by default */
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .image-container:hover .heart-icon {
+            opacity: 1; /* Show the heart icon on hover */
         }
 
         img {
@@ -45,24 +59,24 @@
 <body>
 
     <header>
-        <h1>Tokie Johnson</h1>
-        <p>Where innovation meets dedication!</p>
+        <h1>Your Full Name</h1>
+        <p>Passionate about [Your Field] | Web Developer | Creative Thinker</p>
     </header>
 
     <section>
+        <h2>My Work</h2>
         <div class="image-container">
-            <img src="images/adobestock_331582681.jpg" alt="Engineering and Creative Passion">
+            <img src="images/project1.jpg" alt="Project 1">
+            <div class="heart-icon">&#10084;</div>
         </div>
-        
+        <p>Project 1: [Brief description of Project 1]. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod metus vel varius suscipit.</p>
+
         <div class="image-container">
-            <img src="Unknown.png" alt="Passion for Language Computational Humanities application">
+            <img src="images/project2.jpg" alt="Project 2">
+            <div class="heart-icon">&#10084;</div>
         </div>
-
-        <!-- Add more image containers as needed -->
-
+        <p>Project 2: [Brief description of Project 2]. Phasellus in libero ut neque feugiat tincidunt ac id ligula. Sed ac purus vitae felis aliquet cursus.</p>
     </section>
-
-    <!-- Add more sections and content as needed -->
 
 </body>
 </html>
